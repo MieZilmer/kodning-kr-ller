@@ -12,14 +12,14 @@ body{
 
     min-height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url("../img/bg.jpg");
+    background-image: url("../img/kvinde-med-krøller.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 nav{
-    background-color: rgb(142, 225, 199); 
+    background-color: rgb(251, 208, 231); 
     box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
