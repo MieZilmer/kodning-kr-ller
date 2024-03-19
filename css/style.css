@@ -19,9 +19,10 @@ body{
 }
 
 nav{
-    background-color: rgb(142, 225, 199);
+    background-color: rgb(142, 225, 199); 
     box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
     display: flex;
+    align-items: center;
     flex-direction: row;
     position: sticky;
   
@@ -65,8 +66,6 @@ nav a:hover{
     
 }
 
-
-
 /* styling the logo */
 nav img{
     height: 100%;
@@ -76,22 +75,32 @@ nav img{
 
 }
 
-/* Styling first list-item inside nav container */
-nav li:first-child{
-    
-    display: flex;
-    align-items: center;
-
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-.firstchild{
-    display: flex;
-    display: flex;
-    align-items: center;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    background-color: rgb(233, 249, 247);
+    font-size: 15px;
 }
 
-.secondchild{
-    display: flex;
-    flex-direction: row;
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
+.logo {
+   display: flex;
+   align-items: center;
+   align-content: center;
+   height: 50px;
+   width: auto;
+}
+
+.dropdown-content a {
+    margin: 10px 0; /* Adjust the value as needed */
+    color: rgb(3, 56, 39);
+}
