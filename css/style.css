@@ -1,0 +1,97 @@
+/* reset style */
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* styling the body selector with a background image */
+body{
+
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav{
+    background-color: rgb(142, 225, 199);
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+  
+}
+
+/* Styling unordered list container */
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* styling unordered list-items */
+nav li{
+    height: 65px;
+
+}
+
+/* styling anchor tags inside nav container   */
+nav a {
+    height: 100%;
+    padding: 0px 30px;
+    text-decoration: none; 
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    
+}
+
+/* styling hover effect on anchors */
+nav a:hover{
+
+    color: rgb(3, 56, 39);
+    
+}
+
+
+
+/* styling the logo */
+nav img{
+    height: 100%;
+    width: 100%;  
+    display: flex;
+    align-items: center;
+
+}
+
+/* Styling first list-item inside nav container */
+nav li:first-child{
+    
+    display: flex;
+    align-items: center;
+
+}
+
+.firstchild{
+    display: flex;
+    display: flex;
+    align-items: center;
+}
+
+.secondchild{
+    display: flex;
+    flex-direction: row;
+}
+
