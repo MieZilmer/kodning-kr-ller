@@ -1,6 +1,4 @@
 /* reset style */
-
-
 *{
 margin: 0;
 padding: 0;
@@ -8,25 +6,25 @@ padding: 0;
 
 /* styling the body selector with a background image */
 body{
-    min-height: 100vh;
+    min-height: 6.25rem;
     font-family: 'Nunito Sans', sans-serif;
+    padding-top: 4.0625rem;
 }
 
 #index-page {
-    background: url('../img/kvinde-med-krøller.png') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url('../img/kvinde-med-krøller.png') no-repeat center center fixed;
     background-size: cover;
 }
 
 nav{
-    background-color: rgb(251, 208, 231); 
-    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgb(250, 209, 231); 
+    box-shadow: 0.1875rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     flex-direction: row;
-    position: sticky;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 /* Styling unordered list container */
@@ -38,19 +36,17 @@ nav ul{
     align-content: center;
     align-items: center;
     justify-content: center;
-    
 }
 
 /* styling unordered list-items */
 nav li{
-    height: 65px;
-
+    height: 4.0625rem;
 }
 
-/* styling anchor tags inside nav container   */
+/* styling anchor tags inside nav container */
 nav a {
     height: 100%;
-    padding: 0px 30px;
+    padding: 0rem 1.875rem;
     text-decoration: none; 
     display: flex;
     align-items: center;
@@ -61,25 +57,23 @@ nav a {
 
 blockquote {
     font-style: italic;
-    padding: 50px;
-    max-width: 500px;
+    padding: 3.125rem;
+    max-width: 31.25rem;
     color: #f9f9f9;
-    font-size: 80px;
+    font-size: 5rem;
     position: absolute;
-    top: 65px;
-    right: 40px;
+    top: 4.0625rem;
+    right: 2.5rem;
     text-align: right;
 }
 
 blockquote span {
-    font-size: 25px;
+    font-size: 1.5625rem;
 }
 
 /* styling hover effect on anchors */
 nav a:hover{
-
     color: rgb(3, 56, 39);
-    
 }
 
 /* styling the logo */
@@ -88,7 +82,6 @@ nav img{
     width: 100%;  
     display: flex;
     align-items: center;
-
 }
 
 .dropdown {
@@ -99,9 +92,9 @@ nav img{
 .dropdown-content {
     display: none;
     position: absolute;
-    min-width: 200px;
+    min-width: 12.5rem;
     background-color: rgb(255, 247, 251); 
-    font-size: 15px;
+    font-size: 0.9375rem;
 }
 
 .dropdown:hover .dropdown-content {
@@ -112,12 +105,12 @@ nav img{
    display: flex;
    align-items: center;
    align-content: center;
-   height: 50px;
+   height: 3.125rem;
    width: auto;
 }
 
 .dropdown-content a {
-    margin: 10px 0; /* Adjust the value as needed */
+    margin: 0.625rem 0; /* Adjust the value as needed */
     color: rgb(3, 56, 39);
 }
 
@@ -125,20 +118,42 @@ html {
     scroll-behavior: smooth;
 }
 section {
-    padding: 40px 200px;
+    padding: 2.5rem 12.5rem;
     text-align: justify;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+    
 }
 
 section h1 {
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
 }
 
 section p {
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 section img {
-    display: flex; justify-content: space-between
+    margin: 1.25rem auto;
+    border: 0.625rem solid  rgb(250, 209, 231);
+    border-radius: 0.1875rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5);
+    height: 31.25rem;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+   
+}
+/* For at få nav baren til ikke at dække overskrifterne på de individuelle sider */
+[id]::before {
+    content: "";
+    display: block;
+    height: 3.125rem;
+    visibility: hidden;
 }
