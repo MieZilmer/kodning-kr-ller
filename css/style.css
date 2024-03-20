@@ -9,11 +9,15 @@ padding: 0;
 /* styling the body selector with a background image */
 body{
     min-height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url("../img/kvinde-med-krøller.png");
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#index-page {
+    background: url('../img/kvinde-med-krøller.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0px 65px;
 }
 
 nav{
@@ -96,7 +100,7 @@ nav img{
     display: none;
     position: absolute;
     min-width: 200px;
-    background-color: rgb(233, 249, 247);
+    background-color: rgb(255, 247, 251); 
     font-size: 15px;
 }
 
@@ -115,4 +119,26 @@ nav img{
 .dropdown-content a {
     margin: 10px 0; /* Adjust the value as needed */
     color: rgb(3, 56, 39);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+section {
+    padding: 40px 200px;
+    text-align: justify;
+}
+
+section h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+section img {
+    display: flex; justify-content: space-between
 }
