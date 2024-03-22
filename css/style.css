@@ -68,6 +68,7 @@ blockquote {
     top: 4.0625rem;
     right: 2.5rem;
     text-align: right;
+    z-index: 8;
 }
 
 blockquote span {
@@ -91,7 +92,7 @@ nav img{
 .dropdown {
     position: relative;
     display: inline-block;
-    z-index: 999;
+    z-index: 9;
 }
 
 .dropdown-content {
@@ -141,12 +142,17 @@ section p {
     margin-bottom: 1.25rem;
 }
 
+section a {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
 section img {
     margin: 1.25rem auto;
     border: 0.625rem solid  rgb(250, 209, 231);
     border-radius: 0.1875rem;
     box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5);
-    height: 31.25rem;
+    height: 25rem;
     width: auto;
     display: flex;
     align-items: center;
@@ -154,6 +160,10 @@ section img {
     
     
    
+}
+.image-container {
+    display: flex;
+    justify-content: space-between;
 }
 /* For at få nav baren til ikke at dække overskrifterne på de individuelle sider */
 [id]::before {
