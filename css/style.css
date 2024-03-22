@@ -4,6 +4,9 @@ margin: 0;
 padding: 0;
 }
 
+/* Har bedt den lave alle mine px enheder om til REM 
+så det er derfor der måske er nogle mærkelige REM mål */
+
 /* styling the body selector with a background image */
 body{
     min-height: 6.25rem;
@@ -71,12 +74,12 @@ blockquote span {
     font-size: 1.5625rem;
 }
 
-/* styling hover effect on anchors */
+/* styling hover effect on anchor tags */
 nav a:hover{
     color: rgb(3, 56, 39);
 }
 
-/* styling the logo */
+/* Inserting the logo */
 nav img{
     height: 100%;
     width: 100%;  
@@ -84,9 +87,11 @@ nav img{
     align-items: center;
 }
 
+
 .dropdown {
     position: relative;
     display: inline-block;
+    z-index: 999;
 }
 
 .dropdown-content {
@@ -110,7 +115,7 @@ nav img{
 }
 
 .dropdown-content a {
-    margin: 0.625rem 0; /* Adjust the value as needed */
+    margin: 0.625rem 0; 
     color: rgb(3, 56, 39);
 }
 
@@ -122,7 +127,7 @@ section {
     text-align: justify;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Adjust as needed */
+    height: 100vh; 
     
 }
 
